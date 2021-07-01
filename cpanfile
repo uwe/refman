@@ -1,0 +1,9 @@
+requires 'Crypt::Argon2';
+requires 'Data::Dump';
+requires 'DBD::MySQL';
+requires 'DBI';
+requires 'Math::Random::Secure';
+requires 'Mojo::mysql';
+requires 'Mojolicious';
+requires 'Test::More';
+requires 'UUID::Random::Secure';

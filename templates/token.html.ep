@@ -1,0 +1,6 @@
+% layout 'simple';
+<p>Your token: <mark><%= $token %></mark></p>
+
+<p>
+  Point your followers to <b><a href="<%= $url %>"><%= $url %></a></b>
+</p>

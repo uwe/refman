@@ -1,0 +1,7 @@
+- Log in as affiliate
+  - change address
+  - change password (no recovery)
+  - list confirmed users
+- REST API
+  - /token/:token/valid (for DApp)
+  - API users table
