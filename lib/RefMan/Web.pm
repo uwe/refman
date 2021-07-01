@@ -4,8 +4,7 @@ use Mojo::Base 'Mojolicious', -signatures;
 use Mojo::mysql;
 
 sub startup ($self) {
-
-  my $config = $self->plugin('NotYAMLConfig');
+  my $config = $self->plugin('Config', {file => 'refman.conf'});
   $self->secrets($config->{secrets});
 
   $self->helper(mysql => sub { state $mysql = Mojo::mysql->new(shift->config('mysql')) });

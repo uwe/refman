@@ -1,5 +1,0 @@
----
-secrets:
-  - 2b363954597c820af09dcbad4bcc32b06023fbf4
-dapp_url: https://example.com/
-mysql: mysql://root@/refman
