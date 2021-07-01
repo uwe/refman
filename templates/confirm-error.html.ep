@@ -1,0 +1,11 @@
+% layout 'simple';
+% if ($error eq 'TOKEN_MISSING') {
+  <p><b>Referral token missing!</b></p>
+% } else {
+  <p><b>Referral token invalid!</b></p>
+% }
+
+<p>
+  Please check back with the person that sent you here.
+  There is something wrong with the URL.
+</p>

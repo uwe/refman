@@ -4,7 +4,6 @@ use Mojo::Base 'Mojolicious::Controller', -signatures;
 
 use Crypt::Argon2 qw/argon2id_pass/;
 use Data::Dump qw/pp/;
-use DBI;
 use Math::Random::Secure qw/irand/;
 use UUID::Random::Secure;
 

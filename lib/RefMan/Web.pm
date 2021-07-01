@@ -14,10 +14,19 @@ sub startup ($self) {
   $r->get('/' => sub ($c) {
     $c->redirect_to('register');
   });
-  $r->get('/register')->to('register#index')->name('register');
+
+  # remove on production
   $r->get('/uwe')->to('register#test');
+
+  # Affiliate Registration
+  $r->get('/register')->to('register#index')->name('register');
   $r->post('/register')->to('register#register');
   $r->get('/token')->to('register#token')->name('token');
+
+  # User Confirmation
+  $r->get('/confirm')->to('confirm#index')->name('confirm');
+  $r->post('/confirm')->to('confirm#confirm');
+  $r->get('/thankyou')->to('confirm#thankyou')->name('thankyou');
 }
 
 1;
