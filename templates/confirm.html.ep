@@ -1,2 +1,74 @@
 % layout 'simple';
-HELLO
+
+<script src="/js/web3.min.js"></script>
+
+<h3>Steps</h3>
+<ol>
+  <li id="metamask">Install <a href="https://metamask.io/">MetaMask</a> plugin</li>
+  <li id="connect">Connect your wallet</li>
+  <li id="sign">Sign this message (to confirm the referral token)</li>
+</ol>
+
+<form action="confirm" method="post" id="form">
+  <input type="hidden" id="token" name="token" value="<%= $token %>">
+  <input type="hidden" id="block" name="block">
+  <input type="hidden" id="address" name="address">
+  <input type="hidden" id="signature" name="signature">
+</form>
+
+<script>
+  var address;
+  var block;
+
+  function markAsDone(id) {
+    var e = document.getElementById(id);
+    e.innerHTML = "<del>" + e.innerHTML + "</del> <ins>Done!</ins>";
+  }
+
+  function gotAccounts(error, accounts) {
+    if (error) {
+      console.log(error);
+    } else {
+      markAsDone('connect');
+      address = accounts[0];
+
+      // get (latest) block number
+      web3.eth.getBlockNumber(gotBlockNumber);
+    }
+  }
+
+  function gotBlockNumber(error, latestBlock) {
+    if (error) {
+      console.log(error);
+    } else {
+      block = latestBlock;
+      console.log(block);
+
+      // sign
+      const message = "Block: " + block + "\nReferral token:\n<%= $token %>";
+      web3.eth.personal.sign(message, address, gotSignature);
+    }
+  }
+
+  function gotSignature(error, signature) {
+    if (error) {
+      console.log(error);
+    } else {
+      document.getElementById('block').value = block;
+      document.getElementById('address').value = address;
+      document.getElementById('signature').value = signature;
+
+      markAsDone('sign');
+
+      document.getElementById('form').submit();
+    }
+  }
+
+  if (Web3.givenProvider) {
+    markAsDone('metamask');
+
+    window.web3 = new Web3(Web3.givenProvider);
+    let accounts;
+    web3.eth.requestAccounts(gotAccounts);
+  }
+</script>

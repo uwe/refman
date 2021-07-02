@@ -1,0 +1,9 @@
+% layout 'simple';
+<p>
+  Your confirmation/signature was saved.
+</p>
+
+<p>
+  Now you can proceed with your deposit:
+  <a href="<%= $deposit_url %>"><%= $deposit_url %></a>
+</p>

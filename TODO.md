@@ -2,6 +2,5 @@
   - change address
   - change password (no recovery)
   - list confirmed users
-- REST API
-  - /token/:token/valid (for DApp)
-  - API users table
+- Confirm controller
+  - better copy (remove "Register as affiliate!" subtitle)

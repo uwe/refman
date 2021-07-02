@@ -1,6 +1,7 @@
 package RefMan::Web::Controller::Register;
 
 use Mojo::Base 'Mojolicious::Controller', -signatures;
+use Mojo::Util qw/trim/;
 
 use Crypt::Argon2 qw/argon2id_pass/;
 use Data::Dump qw/pp/;
@@ -85,12 +86,6 @@ sub token ($self) {
   } else {
     $self->redirect_to('/');
   }
-}
-
-sub trim ($str) {
-  $str =~ s/^\s+//;
-  $str =~ s/\s+$//;
-  return $str;
 }
 
 1;
