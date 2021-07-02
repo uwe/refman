@@ -1,6 +1,6 @@
 requires 'Crypt::Argon2';
 requires 'Data::Dump';
-requires 'DBD::MySQL';
+requires 'DBD::mysql';
 requires 'DBI';
 requires 'Math::Random::Secure';
 requires 'Mojo::mysql';
