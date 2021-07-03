@@ -1,0 +1,17 @@
+{
+  "name": "verify-signature",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Uwe Voelker",
+  "license": "ISC",
+  "dependencies": {
+    "ethers": "^5.4.1"
+  },
+  "bin": {
+    "verify-signature": "./bin/index.js"
+  }
+}
