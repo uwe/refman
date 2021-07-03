@@ -1,6 +1,6 @@
 # docker build -t refman . && docker stop refman && docker rm refman && docker run -d -p 127.0.0.1:8013:8080 --link mysql:mysql --name refman refman
 
-FROM phusion/baseimage:focal-1.0.0.
+FROM phusion/baseimage:focal-1.0.0
 
 RUN apt-get update -y
 RUN apt-get install -y build-essential perl libmysqlclient-dev unzip
