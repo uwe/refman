@@ -3,7 +3,7 @@
 FROM phusion/baseimage:focal-1.0.0
 
 RUN apt-get update -y
-RUN apt-get install -y build-essential perl libmysqlclient-dev unzip
+RUN apt-get install -y build-essential perl libmysqlclient-dev unzip npm
 RUN curl -L http://cpanmin.us | perl - App::cpanminus
 
 WORKDIR /home/app
@@ -13,6 +13,9 @@ RUN cpanm --notest --installdeps .
 ADD . /home/app
 
 # ADD crontab /etc/cron.d/refman
+
+WORKDIR /home/app/verify-signature
+RUN npm install
 
 RUN mkdir /etc/service/hypnotoad
 ADD script/hypnotoad.sh /etc/service/hypnotoad/run
