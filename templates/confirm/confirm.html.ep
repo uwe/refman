@@ -1,4 +1,4 @@
-% layout 'simple';
+% layout 'user';
 
 <script src="/js/web3.min.js"></script>
 

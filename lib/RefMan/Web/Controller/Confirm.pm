@@ -20,10 +20,10 @@ sub index ($self) {
 
   if ($error) {
     $self->stash(error => $error);
-    $self->render(template => 'confirm-error');
+    $self->render(template => 'confirm/confirm-error');
   } else {
     $self->stash(token => $token);
-    $self->render(template => 'confirm');
+    $self->render(template => 'confirm/confirm');
   }
 }
 
@@ -43,9 +43,9 @@ sub confirm ($self) {
 
   if ($ok) {
     $self->stash(deposit_url => $self->app->config->{deposit_url});
-    $self->render(template => 'thankyou');
+    $self->render(template => 'confirm/thankyou');
   } else {
-    $self->render(template => 'thankyou-error');
+    $self->render(template => 'confirm/thankyou-error');
   }
 }
 

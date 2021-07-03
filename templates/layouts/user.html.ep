@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badger Referral Program</title>
+    <link rel="stylesheet" href="/css/simple.min.css">
+    <style>
+      main {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      input {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Badger Referral Program</h1>
+      <p>Confirm your referral!</p>
+    </header>
+    <main>
+      <%= content %>
+    </main>
+    <footer>
+      <p>Badger Referral Program</p>
+    </footer>
+  </body>
+</html>

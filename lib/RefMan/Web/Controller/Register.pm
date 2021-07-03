@@ -4,14 +4,13 @@ use Mojo::Base 'Mojolicious::Controller', -signatures;
 use Mojo::Util qw/trim/;
 
 use Crypt::Argon2 qw/argon2id_pass/;
-use Data::Dump qw/pp/;
 use Math::Random::Secure qw/irand/;
 use UUID::Random::Secure;
 
 
 sub index ($self) {
   $self->stash(form => {}, error => {});
-  $self->render(template => 'register');
+  $self->render(template => 'register/register');
 }
 
 # TODO only for testing - remove
@@ -25,7 +24,7 @@ sub test ($self) {
     address   => $addr,
   );
   $self->stash(form => \%data, error => {});
-  $self->render(template => 'register');
+  $self->render(template => 'register/register');
 }
 
 sub register ($self) {
@@ -45,7 +44,7 @@ sub register ($self) {
 
   if (%error) {
     $self->stash(form => \%data, error => \%error);
-    $self->render(template => 'register');
+    $self->render(template => 'register/register');
     return;
   }
 
@@ -68,7 +67,7 @@ sub register ($self) {
     }
 
     $self->stash(form => \%data, error => \%error);
-    $self->render(template => 'register');
+    $self->render(template => 'register/register');
     return;
   }
 
@@ -82,7 +81,7 @@ sub token ($self) {
   if ($token) {
     my $url = $self->app->config->{dapp_url} . '?ref=' . $token;
     $self->stash(token => $token, url => $url);
-    $self->render(template => 'token');
+    $self->render(template => 'register/token');
   } else {
     $self->redirect_to('/');
   }

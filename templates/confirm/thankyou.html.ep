@@ -1,4 +1,4 @@
-% layout 'simple';
+% layout 'user';
 <p>
   Your confirmation/signature was saved.
 </p>

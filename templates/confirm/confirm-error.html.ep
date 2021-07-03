@@ -1,4 +1,4 @@
-% layout 'simple';
+% layout 'user';
 % if ($error eq 'TOKEN_MISSING') {
   <p><b>Referral token missing!</b></p>
 % } else {
