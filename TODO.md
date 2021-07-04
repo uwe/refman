@@ -2,5 +2,3 @@
   - change address
   - change password (no recovery)
   - list confirmed users
-- verify signature
-  - DB: signatures -> confirmations

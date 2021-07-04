@@ -38,7 +38,7 @@ sub confirm ($self) {
   # store everything (without error checks) - we validate the signature later (via cron job)
 
   my $dbh = $self->mysql->db->dbh;
-  my $sql = 'INSERT INTO signatures (token, block, address, signature) VALUES (?, ?, ?, ?)';
+  my $sql = 'INSERT INTO signatures (token, block, address, signature, created_at) VALUES (?, ?, ?, ?, NOW())';
   my $ok = $dbh->do($sql, {}, $data{token}, $data{block}, $data{address}, $data{signature});
 
   if ($ok) {

@@ -40,7 +40,7 @@ sub register ($self) {
   $error{username}  = 'Too short - at least 5 characters.' if length($data{username}) < 5;
   $error{password}  = 'Too short - at least 8 characters.' if length($data{password}) < 8;
   $error{password2} = 'Passwords not identical.' if $data{password} ne $data{password2};
-  $error{address}   = 'Not a valid ETH address.' if $data{address} !~ /^0x[0-9a-fA-F]{40}$/;
+  $error{address}   = 'Not a valid ETH address.' if $data{address} !~ /^0x[[:xdigit]]{40}$/;
 
   if (%error) {
     $self->stash(form => \%data, error => \%error);
