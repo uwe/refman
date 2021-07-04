@@ -2,5 +2,5 @@
   - change address
   - change password (no recovery)
   - list confirmed users
-- Confirm controller
-  - better copy (remove "Register as affiliate!" subtitle)
+- verify signature
+  - DB: signatures -> confirmations
