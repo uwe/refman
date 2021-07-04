@@ -1,10 +1,8 @@
 package RefMan::Vaults;
 
-use Mojo::Base -strict;
+use Mojo::Base -strict, -signatures;
 
-sub new {
-  my ($class, $dbh) = @_;
-
+sub new ($class, $dbh) {
   # load vaults from database
   my $sql = 'SELECT * FROM vaults';
   my $all = $dbh->selectall_arrayref($sql, {Slice => {}});
@@ -23,9 +21,7 @@ sub new {
   return bless $self, $class;
 }
 
-sub get_vault_id {
-  my ($self, $address) = @_;
-
+sub get_vault_id ($self, $address) {
   my $vault = $self->{address}->{lc($address)};
   unless ($vault) {
     warn "Vault $address unknown.";
@@ -39,15 +35,11 @@ sub get_vault_id {
   return $vault->{id};
 }
 
-sub get_all_dune_vaults {
-  my ($self) = @_;
-
+sub get_all_dune_vaults ($self) {
   return values %{$self->{dune}};
 }
 
-sub get_vault_by_dune {
-  my ($self, $column) = @_;
-
+sub get_vault_by_dune ($self, $column) {
   my $vault = $self->{dune}->{$column};
   return undef unless $vault;
 

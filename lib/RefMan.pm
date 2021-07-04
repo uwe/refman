@@ -6,6 +6,7 @@ use Mojo::mysql;
 use RefMan::Vaults;
 
 use base 'RefMan::HandleTransactions';
+use RefMan::Command::InsertConfirmations;
 
 has config => sub {
   do "./refman.conf";
@@ -37,6 +38,11 @@ sub get_affiliate_for_user ($self, $user_id, $block) {
   my $sql = "SELECT affiliate_id FROM user_affiliates WHERE user_id=? AND from_block<=? AND (till_block<? OR till_block IS NULL)";
   my ($id) = @{$self->dbh->selectcol_arrayref($sql, {}, $user_id, $block, $block)};
   return $id;
+}
+
+# commands
+sub insert_confirmations ($self) {
+  RefMan::Command::InsertConfirmations->run($self->dbh);
 }
 
 1;
