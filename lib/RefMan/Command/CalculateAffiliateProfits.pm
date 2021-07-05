@@ -1,4 +1,4 @@
-package RefMan::Command::InsertProfitShare;
+package RefMan::Command::CalculateAffiliateProfits;
 
 use Mojo::Base -strict, -signatures;
 use bigint;
@@ -12,8 +12,10 @@ sub description {
 }
 
 sub run ($class, $refman, $start_date = '2020-06-01') {
-  # get vault profits
   my $dbh = $refman->dbh;
+  $dbh->do('TRUNCATE TABLE affiliate_profits');
+
+  # get vault profits
   my $sql = 'SELECT vault_fees.*, vault_shares.total_supply, blocks.block, vaults.percent FROM vault_fees, vault_shares, blocks, vaults
   WHERE vault_fees.vault_id = vault_shares.vault_id AND vault_fees.day = vault_shares.day AND
     vault_fees.day = blocks.day AND vault_fees.vault_id = vaults.id AND vault_fees.day >= ?';
@@ -46,9 +48,14 @@ sub run ($class, $refman, $start_date = '2020-06-01') {
     while (my ($affiliate_id, $balance) = each %affiliate) {
       next if $balance == 0;
 
-      printf("Affiliate: %d - Percentage: %.10f\n", $affiliate_id, 100 * $balance / $total_supply);
+      printf(
+        "Affiliate: %d - Vault: %d - Percentage: %.10f\n",
+        $affiliate_id,
+        $vault_id,
+        100 * $balance / $total_supply,
+      );
 
-      my $profit_share = $profit * $percent * $balance / $total_supply;
+      my $profit_share = $profit * $percent / 100 * $balance / $total_supply;
       $dbh->do('INSERT INTO affiliate_profits (affiliate_id, vault_id, day, profit) VALUES (?, ?, ?, ?)', {}, $affiliate_id, $vault_id, $day, $profit_share);
     }
   }
