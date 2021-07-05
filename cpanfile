@@ -1,5 +1,6 @@
 requires 'Crypt::Argon2';
 requires 'Data::Dump';
+requires 'Date::Simple';
 requires 'DBD::mysql';
 requires 'DBI';
 requires 'rlib';
