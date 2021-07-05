@@ -1,15 +1,15 @@
-package RefMan::Command::InsertConfirmations;
+package RefMan::Command::VerifySignatures;
 
 use Mojo::Base -strict, -signatures;
 
 sub description {
-  "Check signatures (DB table) and convert them to confirmations (DB table)."
+  "Verify signatures (DB table) and convert them to user_affiliates (DB table)."
 }
 
 sub run ($class, $refman) {
   my $dbh = $refman->dbh;
   my $all = $dbh->selectall_arrayref(
-    'SELECT * FROM signatures WHERE status=? ORDER BY block',
+    'SELECT * FROM signatures WHERE status=? ORDER BY block, created_at',
     {Slice => {}},
     'open',
   );
@@ -58,11 +58,33 @@ sub run ($class, $refman) {
       next;
     } else {
       my $user_id = $refman->get_user_id($address);
+      my $affiliate_id = $affiliate->{id};
+
+      # is there a previous affiliate?
+      my $sql = 'SELECT * FROM user_affiliates WHERE user_id=? and till_block IS NULL';
+      my $old = $dbh->selectrow_hashref($sql, {}, $user_id);
+      if ($old) {
+        if ($old->{affiliate_id} == $affiliate_id) {
+          # previous affiliate is the same - skip new DB entry (old one still valid)
+          $dbh->do('UPDATE signatures SET status=? WHERE id=?', {}, 'confirmed', $row->{id});
+          next;
+        } else {
+          # previous affiliate is different - end old entry
+          $dbh->do(
+            'UPDATE user_affiliates SET till_block=? WHERE user_id=?, affiliate_id=?, block=?',
+            {},
+            $block - 1, $old->{user_id}, $old->{affiliate_id}, $old->{block},
+          );
+        }
+      }
+
+      # write new entry (with open end)
       $dbh->do(
-        "INSERT INTO confirmations (user_id, affiliate_id, from_block) VALUES (?, ?, ?)",
+        "INSERT INTO user_affiliates (user_id, affiliate_id, from_block) VALUES (?, ?, ?)",
         {},
-        $user_id, $affiliate->{id}, $block + 1,
+        $user_id, $affiliate_id, $block + 1,
       );
+
       $dbh->do('UPDATE signatures SET status=? WHERE id=?', {}, 'confirmed', $row->{id});
     }
   }

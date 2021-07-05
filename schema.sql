@@ -1,3 +1,11 @@
+CREATE TABLE `affiliate_profits` (
+  `affiliate_id` int(10) unsigned NOT NULL,
+  `vault_id` int(10) unsigned NOT NULL,
+  `day` date NOT NULL,
+  `profit` decimal(30,20) NOT NULL,
+  PRIMARY KEY (`affiliate_id`,`vault_id`,`day`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 CREATE TABLE `affiliates` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `username` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
@@ -18,24 +26,16 @@ CREATE TABLE `blocks` (
   KEY `block` (`block`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-CREATE TABLE `confirmations` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `affiliate` int(10) unsigned NOT NULL,
-  `address` varchar(255) NOT NULL DEFAULT '',
-  `signature` text NOT NULL,
-  `signed_at` datetime NOT NULL,
-  `from_block` int(10) unsigned DEFAULT NULL,
-  `till_block` int(10) unsigned DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
 CREATE TABLE `signatures` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `status` enum('open','confirmed','invalid') NOT NULL DEFAULT 'open',
   `token` varchar(255) DEFAULT NULL,
   `block` int(10) unsigned DEFAULT NULL,
   `address` varchar(255) DEFAULT NULL,
   `signature` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `created_at` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `block` (`block`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `user_affiliate_balances` (
@@ -70,11 +70,26 @@ CREATE TABLE `users` (
   UNIQUE KEY `address` (`address`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE TABLE `vault_fees` (
+  `vault_id` int(10) unsigned NOT NULL,
+  `day` date NOT NULL,
+  `usd` decimal(20,12) unsigned NOT NULL,
+  PRIMARY KEY (`vault_id`,`day`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `vault_shares` (
+  `vault_id` int(10) unsigned NOT NULL,
+  `day` date NOT NULL,
+  `total_supply` decimal(65,0) unsigned NOT NULL,
+  PRIMARY KEY (`vault_id`,`day`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 CREATE TABLE `vaults` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `address` varchar(255) NOT NULL,
+  `ignore` tinyint(1) NOT NULL DEFAULT '0',
   `name` varchar(255) DEFAULT NULL,
   `token` varchar(255) DEFAULT NULL,
-  `address` varchar(255) NOT NULL DEFAULT '',
   `percent` decimal(5,3) NOT NULL,
   `dune` varchar(255) DEFAULT NULL,
   `api` varchar(255) DEFAULT NULL,
