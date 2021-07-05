@@ -2,5 +2,4 @@
   - change address
   - change password (no recovery)
   - list confirmed users
-- move scripts (insert-..., balance) to RefMan::Command modules
-  - maybe use Mojolicious::Command
+- balance.pl as command and data from subgraph
