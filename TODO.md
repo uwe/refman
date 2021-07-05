@@ -1,5 +1,6 @@
-- Log in as affiliate
+- Log in as affiliate?
   - change address
   - change password (no recovery)
   - list confirmed users
 - balance.pl as command and data from subgraph
+- insert_blocks command (using subgraph)
