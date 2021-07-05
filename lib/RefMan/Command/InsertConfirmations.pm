@@ -2,7 +2,12 @@ package RefMan::Command::InsertConfirmations;
 
 use Mojo::Base -strict, -signatures;
 
-sub run ($class, $dbh) {
+sub description {
+  "Check signatures (DB table) and convert them to confirmations (DB table)."
+}
+
+sub run ($class, $refman) {
+  my $dbh = $refman->dbh;
   my $all = $dbh->selectall_arrayref(
     'SELECT * FROM signatures WHERE status=? ORDER BY block',
     {Slice => {}},

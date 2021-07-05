@@ -6,7 +6,7 @@ use Mojo::mysql;
 use RefMan::Vaults;
 
 use base 'RefMan::HandleTransactions';
-use RefMan::Command::InsertConfirmations;
+use RefMan::Command;
 
 has config => sub {
   do "./refman.conf";
@@ -41,8 +41,8 @@ sub get_affiliate_for_user ($self, $user_id, $block) {
 }
 
 # commands
-sub insert_confirmations ($self) {
-  RefMan::Command::InsertConfirmations->run($self->dbh);
+sub command ($self, @args) {
+  RefMan::Command->run($self, @args);
 }
 
 1;
