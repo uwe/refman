@@ -1,6 +1,8 @@
 # RefMan - Referral Manager
 Badger DAO Referral Program ([Gitcoin GR10 Bounty](https://gitcoin.co/issue/Badger-Finance/gitcoin/3/100025930))
 
+Demo deployment (web app): https://badger-demo.uwevoelker.com/
+
 ## Web app
 
 - allows affiliates (referrals, influencers) to register -> they get a token (UUID)
