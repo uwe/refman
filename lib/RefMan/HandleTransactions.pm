@@ -1,6 +1,7 @@
 package RefMan::HandleTransactions;
 
 use Mojo::Base -strict, -signatures;
+use bigint;
 
 sub deposits_to_transactions ($self, $deposits, $user_id) {
   my @transactions = ();

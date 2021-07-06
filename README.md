@@ -32,9 +32,13 @@ Distributes a share of the DAO profits to affiliates (per vault per day). For ea
 
 (This is the final step and has to run last.)
 
+### insert_blocks
+
+Takes the output of [this Dune query](https://duneanalytics.com/queries/69963) and stores it into the `blocks` database table.
+
 ### insert_fees
 
-Takes the output of TODO and stores it into the `vault_fees` database table.
+Takes the output of [this Dune query](https://duneanalytics.com/queries/63667) and stores it into the `vault_fees` database table.
 
 ### insert_shares
 
@@ -80,7 +84,7 @@ Ethereum addresses of users. (Used to produce smaller tables.)
 
 ### vault_fees
 
-Daily USD income for each vault. Source: Dune (TODO).
+Daily USD income for each vault. Source: [Dune query](https://duneanalytics.com/queries/63667).
 
 ### vault_shares
 

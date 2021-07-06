@@ -9,7 +9,7 @@ sub description {
   "Insert daily income from Dune result (JSON file) into vault_fees (DB table)."
 }
 
-sub run ($class, $refman, $file = 'dune-fees.json') {
+sub run ($class, $refman, $file = 'data/dune-fees.json') {
   my $json = Mojo::File->new($file)->slurp;
   my $data = decode_json($json);
 

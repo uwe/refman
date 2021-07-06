@@ -18,9 +18,9 @@ sub run ($class, $refman, $start_date = '2021-07-01') {
   my $sql = 'SELECT * FROM blocks WHERE day >= ? ORDER BY day';
   my $all = $dbh->selectall_arrayref($sql, {Slice => {}}, $start_date);
 
-  my $query = <<END;
-query totalSupply(\$block: Int) {
-  vaults(block: {number: \$block}) {
+  my $query = <<'END';
+query totalSupply($block: Int) {
+  vaults(block: {number: $block}) {
     id
     totalSupplyRaw
   }

@@ -1,0 +1,1483 @@
+{
+   "data" : {
+      "get_result_by_result_id" : [
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-27T00:00:00+00:00",
+               "min" : 12712734
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-26T00:00:00+00:00",
+               "min" : 12706307
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-25T00:00:00+00:00",
+               "min" : 12699965
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-24T00:00:00+00:00",
+               "min" : 12693547
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-23T00:00:00+00:00",
+               "min" : 12687118
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-22T00:00:00+00:00",
+               "min" : 12680681
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-21T00:00:00+00:00",
+               "min" : 12674365
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-20T00:00:00+00:00",
+               "min" : 12667896
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-19T00:00:00+00:00",
+               "min" : 12661470
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-18T00:00:00+00:00",
+               "min" : 12655065
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-17T00:00:00+00:00",
+               "min" : 12648593
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-16T00:00:00+00:00",
+               "min" : 12642194
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-15T00:00:00+00:00",
+               "min" : 12635689
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-14T00:00:00+00:00",
+               "min" : 12629258
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-13T00:00:00+00:00",
+               "min" : 12622785
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-12T00:00:00+00:00",
+               "min" : 12616351
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-11T00:00:00+00:00",
+               "min" : 12609897
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-10T00:00:00+00:00",
+               "min" : 12603435
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-09T00:00:00+00:00",
+               "min" : 12596998
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-08T00:00:00+00:00",
+               "min" : 12590523
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-07T00:00:00+00:00",
+               "min" : 12584092
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-06T00:00:00+00:00",
+               "min" : 12577560
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-05T00:00:00+00:00",
+               "min" : 12571126
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-04T00:00:00+00:00",
+               "min" : 12564607
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-03T00:00:00+00:00",
+               "min" : 12558203
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-02T00:00:00+00:00",
+               "min" : 12551697
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-01T00:00:00+00:00",
+               "min" : 12545219
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-31T00:00:00+00:00",
+               "min" : 12538796
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-30T00:00:00+00:00",
+               "min" : 12532379
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-29T00:00:00+00:00",
+               "min" : 12525912
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-28T00:00:00+00:00",
+               "min" : 12519449
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-27T00:00:00+00:00",
+               "min" : 12513024
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-26T00:00:00+00:00",
+               "min" : 12506593
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-25T00:00:00+00:00",
+               "min" : 12500189
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-24T00:00:00+00:00",
+               "min" : 12493702
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-23T00:00:00+00:00",
+               "min" : 12487248
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-22T00:00:00+00:00",
+               "min" : 12480786
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-21T00:00:00+00:00",
+               "min" : 12474376
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-20T00:00:00+00:00",
+               "min" : 12467913
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-19T00:00:00+00:00",
+               "min" : 12461490
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-18T00:00:00+00:00",
+               "min" : 12455027
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-17T00:00:00+00:00",
+               "min" : 12448608
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-16T00:00:00+00:00",
+               "min" : 12442150
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-15T00:00:00+00:00",
+               "min" : 12435676
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-14T00:00:00+00:00",
+               "min" : 12429199
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-13T00:00:00+00:00",
+               "min" : 12422661
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-12T00:00:00+00:00",
+               "min" : 12416222
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-11T00:00:00+00:00",
+               "min" : 12409775
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-10T00:00:00+00:00",
+               "min" : 12403258
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-09T00:00:00+00:00",
+               "min" : 12396780
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-08T00:00:00+00:00",
+               "min" : 12390294
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-07T00:00:00+00:00",
+               "min" : 12383847
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-06T00:00:00+00:00",
+               "min" : 12377381
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-05T00:00:00+00:00",
+               "min" : 12370863
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-04T00:00:00+00:00",
+               "min" : 12364359
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-03T00:00:00+00:00",
+               "min" : 12357852
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-02T00:00:00+00:00",
+               "min" : 12351434
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-05-01T00:00:00+00:00",
+               "min" : 12344945
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-30T00:00:00+00:00",
+               "min" : 12338494
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-29T00:00:00+00:00",
+               "min" : 12332010
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-28T00:00:00+00:00",
+               "min" : 12325547
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-27T00:00:00+00:00",
+               "min" : 12319059
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-26T00:00:00+00:00",
+               "min" : 12312588
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-25T00:00:00+00:00",
+               "min" : 12306079
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-24T00:00:00+00:00",
+               "min" : 12299579
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-23T00:00:00+00:00",
+               "min" : 12293129
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-22T00:00:00+00:00",
+               "min" : 12286712
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-21T00:00:00+00:00",
+               "min" : 12280193
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-20T00:00:00+00:00",
+               "min" : 12273613
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-19T00:00:00+00:00",
+               "min" : 12267213
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-18T00:00:00+00:00",
+               "min" : 12260712
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-17T00:00:00+00:00",
+               "min" : 12254245
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-16T00:00:00+00:00",
+               "min" : 12247812
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-15T00:00:00+00:00",
+               "min" : 12241312
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-14T00:00:00+00:00",
+               "min" : 12234863
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-13T00:00:00+00:00",
+               "min" : 12228389
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-12T00:00:00+00:00",
+               "min" : 12221873
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-11T00:00:00+00:00",
+               "min" : 12215327
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-10T00:00:00+00:00",
+               "min" : 12208745
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-09T00:00:00+00:00",
+               "min" : 12202288
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-08T00:00:00+00:00",
+               "min" : 12195833
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-07T00:00:00+00:00",
+               "min" : 12189296
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-06T00:00:00+00:00",
+               "min" : 12182813
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-05T00:00:00+00:00",
+               "min" : 12176303
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-04T00:00:00+00:00",
+               "min" : 12169742
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-03T00:00:00+00:00",
+               "min" : 12163215
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-02T00:00:00+00:00",
+               "min" : 12156761
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-04-01T00:00:00+00:00",
+               "min" : 12150245
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-31T00:00:00+00:00",
+               "min" : 12143793
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-30T00:00:00+00:00",
+               "min" : 12137275
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-29T00:00:00+00:00",
+               "min" : 12130764
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-28T00:00:00+00:00",
+               "min" : 12124271
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-27T00:00:00+00:00",
+               "min" : 12117786
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-26T00:00:00+00:00",
+               "min" : 12111247
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-25T00:00:00+00:00",
+               "min" : 12104733
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-24T00:00:00+00:00",
+               "min" : 12098249
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-23T00:00:00+00:00",
+               "min" : 12091744
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-22T00:00:00+00:00",
+               "min" : 12085254
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-21T00:00:00+00:00",
+               "min" : 12078833
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-20T00:00:00+00:00",
+               "min" : 12072306
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-19T00:00:00+00:00",
+               "min" : 12065800
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-18T00:00:00+00:00",
+               "min" : 12059299
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-17T00:00:00+00:00",
+               "min" : 12052815
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-16T00:00:00+00:00",
+               "min" : 12046295
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-15T00:00:00+00:00",
+               "min" : 12039858
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-14T00:00:00+00:00",
+               "min" : 12033336
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-13T00:00:00+00:00",
+               "min" : 12026824
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-12T00:00:00+00:00",
+               "min" : 12020354
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-11T00:00:00+00:00",
+               "min" : 12013939
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-10T00:00:00+00:00",
+               "min" : 12007407
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-09T00:00:00+00:00",
+               "min" : 12000974
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-08T00:00:00+00:00",
+               "min" : 11994474
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-07T00:00:00+00:00",
+               "min" : 11987997
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-06T00:00:00+00:00",
+               "min" : 11981434
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-05T00:00:00+00:00",
+               "min" : 11974909
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-04T00:00:00+00:00",
+               "min" : 11968394
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-03T00:00:00+00:00",
+               "min" : 11961986
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-02T00:00:00+00:00",
+               "min" : 11955436
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-03-01T00:00:00+00:00",
+               "min" : 11948960
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-28T00:00:00+00:00",
+               "min" : 11942493
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-27T00:00:00+00:00",
+               "min" : 11936004
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-26T00:00:00+00:00",
+               "min" : 11929462
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-25T00:00:00+00:00",
+               "min" : 11922947
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-24T00:00:00+00:00",
+               "min" : 11916478
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-23T00:00:00+00:00",
+               "min" : 11909976
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-22T00:00:00+00:00",
+               "min" : 11903480
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-21T00:00:00+00:00",
+               "min" : 11896995
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-20T00:00:00+00:00",
+               "min" : 11890500
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-19T00:00:00+00:00",
+               "min" : 11883923
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-18T00:00:00+00:00",
+               "min" : 11877476
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-17T00:00:00+00:00",
+               "min" : 11870927
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-16T00:00:00+00:00",
+               "min" : 11864442
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-15T00:00:00+00:00",
+               "min" : 11857946
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-14T00:00:00+00:00",
+               "min" : 11851387
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-13T00:00:00+00:00",
+               "min" : 11844964
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-12T00:00:00+00:00",
+               "min" : 11838440
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-11T00:00:00+00:00",
+               "min" : 11831923
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-10T00:00:00+00:00",
+               "min" : 11825395
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-09T00:00:00+00:00",
+               "min" : 11818910
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-08T00:00:00+00:00",
+               "min" : 11812442
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-07T00:00:00+00:00",
+               "min" : 11805888
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-06T00:00:00+00:00",
+               "min" : 11799369
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-05T00:00:00+00:00",
+               "min" : 11792922
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-04T00:00:00+00:00",
+               "min" : 11786406
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-03T00:00:00+00:00",
+               "min" : 11779922
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-02T00:00:00+00:00",
+               "min" : 11773428
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-02-01T00:00:00+00:00",
+               "min" : 11766939
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-31T00:00:00+00:00",
+               "min" : 11760302
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-30T00:00:00+00:00",
+               "min" : 11753912
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-29T00:00:00+00:00",
+               "min" : 11747459
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-28T00:00:00+00:00",
+               "min" : 11740961
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-27T00:00:00+00:00",
+               "min" : 11734493
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-26T00:00:00+00:00",
+               "min" : 11727979
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-25T00:00:00+00:00",
+               "min" : 11721455
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-24T00:00:00+00:00",
+               "min" : 11714974
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-23T00:00:00+00:00",
+               "min" : 11708433
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-22T00:00:00+00:00",
+               "min" : 11701952
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-21T00:00:00+00:00",
+               "min" : 11695474
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-20T00:00:00+00:00",
+               "min" : 11688896
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-19T00:00:00+00:00",
+               "min" : 11682363
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-18T00:00:00+00:00",
+               "min" : 11675867
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-17T00:00:00+00:00",
+               "min" : 11669373
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-16T00:00:00+00:00",
+               "min" : 11662865
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-15T00:00:00+00:00",
+               "min" : 11656284
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-14T00:00:00+00:00",
+               "min" : 11649878
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-13T00:00:00+00:00",
+               "min" : 11643317
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-12T00:00:00+00:00",
+               "min" : 11636762
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-11T00:00:00+00:00",
+               "min" : 11630234
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-10T00:00:00+00:00",
+               "min" : 11623680
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-09T00:00:00+00:00",
+               "min" : 11617204
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-08T00:00:00+00:00",
+               "min" : 11610611
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-07T00:00:00+00:00",
+               "min" : 11604175
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-06T00:00:00+00:00",
+               "min" : 11597690
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-05T00:00:00+00:00",
+               "min" : 11591158
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-04T00:00:00+00:00",
+               "min" : 11584641
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-03T00:00:00+00:00",
+               "min" : 11578165
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-02T00:00:00+00:00",
+               "min" : 11571564
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-01-01T00:00:00+00:00",
+               "min" : 11565019
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-31T00:00:00+00:00",
+               "min" : 11558517
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-30T00:00:00+00:00",
+               "min" : 11551973
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-29T00:00:00+00:00",
+               "min" : 11545563
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-28T00:00:00+00:00",
+               "min" : 11538966
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-27T00:00:00+00:00",
+               "min" : 11532458
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-26T00:00:00+00:00",
+               "min" : 11525875
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-25T00:00:00+00:00",
+               "min" : 11519440
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-24T00:00:00+00:00",
+               "min" : 11512970
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-23T00:00:00+00:00",
+               "min" : 11506373
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-22T00:00:00+00:00",
+               "min" : 11499871
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-21T00:00:00+00:00",
+               "min" : 11493367
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-20T00:00:00+00:00",
+               "min" : 11486825
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-19T00:00:00+00:00",
+               "min" : 11480311
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-18T00:00:00+00:00",
+               "min" : 11473820
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-17T00:00:00+00:00",
+               "min" : 11467280
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-16T00:00:00+00:00",
+               "min" : 11460745
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-15T00:00:00+00:00",
+               "min" : 11454256
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-14T00:00:00+00:00",
+               "min" : 11447732
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-13T00:00:00+00:00",
+               "min" : 11441245
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-12T00:00:00+00:00",
+               "min" : 11434754
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-11T00:00:00+00:00",
+               "min" : 11428268
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-10T00:00:00+00:00",
+               "min" : 11421843
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-09T00:00:00+00:00",
+               "min" : 11415240
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-08T00:00:00+00:00",
+               "min" : 11408756
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-07T00:00:00+00:00",
+               "min" : 11402291
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-06T00:00:00+00:00",
+               "min" : 11395733
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-05T00:00:00+00:00",
+               "min" : 11389238
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-04T00:00:00+00:00",
+               "min" : 11382789
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-03T00:00:00+00:00",
+               "min" : 11376230
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-02T00:00:00+00:00",
+               "min" : 11369789
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2020-12-01T00:00:00+00:00",
+               "min" : 11363270
+            }
+         }
+      ],
+      "query_results" : [
+         {
+            "__typename" : "query_results",
+            "columns" : [
+               "day",
+               "min"
+            ],
+            "error" : null,
+            "generated_at" : "2021-06-27T20:38:05.905169+00:00",
+            "id" : "1db29cd6-4f1a-4642-b6dc-a46a73cc0764",
+            "job_id" : "5af810f1-ed42-4fdd-907c-8c998f7d7316",
+            "runtime" : 1
+         }
+      ]
+   }
+}
