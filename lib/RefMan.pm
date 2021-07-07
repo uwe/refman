@@ -4,6 +4,7 @@ use Mojo::Base -base, -signatures;
 
 use Data::Dump qw/pp/;
 use Mojo::mysql;
+use Mojo::UserAgent;
 
 use RefMan::Vaults;
 

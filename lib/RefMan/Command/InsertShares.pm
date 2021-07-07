@@ -39,7 +39,7 @@ END
         $vault->{id},
         $day,
         $supply{lc($vault->{address})},
-      )
+      );
     }
   }
 }
