@@ -3,11 +3,6 @@ package RefMan::Command::CalculateBalances;
 use Mojo::Base -strict, -signatures;
 use bigint;
 
-use Data::Dump qw/pp/;
-use Mojo::UserAgent;
-
-my $url = "https://api.thegraph.com/subgraphs/name/uwe/badger-setts";
-
 sub description {
   "Calculate user (and affiliate) balances from Subgraph queries."
 }
@@ -17,8 +12,6 @@ sub run ($self, $refman) {
   foreach my $table (qw/user_affiliate_balances user_balances/) {
     $refman->dbh->do("TRUNCATE TABLE $table");
   }
-
-  my $ua = Mojo::UserAgent->new;
 
   my $query = <<'END';
 query getTransactions($id: ID!) {
@@ -45,30 +38,21 @@ END
     my $user_id = $row->{id};
     my $address = $row->{address};
 
-    my $body = {
-      query => $query,
-      variables => {id => $address},
-    };
-    my $res = $ua->post($url, json => $body)->res;
-    unless ($res->is_success) {
-      say $address;
-      say $res->to_string;
-      next;
-    }
+    my $data = $refman->subgraph($query, {id => $address});
+    next unless $data;
 
-    my $data = $res->json->{data}->{account};
-
+    my $account = $data->{account};
     printf(
       "%s - %d deposits and %d withdrawals\n",
       $address,
-      scalar(@{$data->{deposits}}),
-      scalar(@{$data->{withdrawals}}),
+      scalar(@{$account->{deposits}}),
+      scalar(@{$account->{withdrawals}}),
     );
 
     # mix deposits and withdrawals
     my @transaction = (
-      $refman->deposits_to_transactions($data->{deposits}, $user_id),
-      $refman->withdrawals_to_transactions($data->{withdrawals}, $user_id),
+      $refman->deposits_to_transactions($account->{deposits}, $user_id),
+      $refman->withdrawals_to_transactions($account->{withdrawals}, $user_id),
     );
 
     # sort by block number
@@ -78,7 +62,6 @@ END
     foreach my $tx (@transaction) {
       $refman->add_transaction($tx);
     }
-
   }
 }
 

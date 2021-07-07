@@ -1,6 +1,8 @@
 package RefMan;
 
 use Mojo::Base -base, -signatures;
+
+use Data::Dump qw/pp/;
 use Mojo::mysql;
 
 use RefMan::Vaults;
@@ -10,6 +12,10 @@ use RefMan::Command;
 
 has config => sub {
   do "./refman.conf";
+};
+
+has ua => sub {
+  Mojo::UserAgent->new;
 };
 
 has mysql => sub ($self) {
@@ -40,9 +46,26 @@ sub get_affiliate_for_user ($self, $user_id, $block) {
   return $id;
 }
 
-# commands
 sub command ($self, @args) {
   RefMan::Command->run($self, @args);
+}
+
+sub subgraph ($self, $query, $variables) {
+  my $body = {
+    query => $query,
+    variables => $variables,
+  };
+  my $res = $self->ua->post(
+    $self->config->{subgraph_url},
+    json => $body,
+  )->res;
+  unless ($res->is_success) {
+    pp $variables;
+    say $res->to_string;
+    return;
+  }
+
+  return $res->json->{data};
 }
 
 1;
