@@ -4,6 +4,76 @@
          {
             "__typename" : "get_result_template",
             "data" : {
+               "day" : "2021-07-07T00:00:00+00:00",
+               "min" : 12777015
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-07-06T00:00:00+00:00",
+               "min" : 12770590
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-07-05T00:00:00+00:00",
+               "min" : 12764171
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-07-04T00:00:00+00:00",
+               "min" : 12757713
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-07-03T00:00:00+00:00",
+               "min" : 12751296
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-07-02T00:00:00+00:00",
+               "min" : 12744859
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-07-01T00:00:00+00:00",
+               "min" : 12738509
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-30T00:00:00+00:00",
+               "min" : 12732054
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-29T00:00:00+00:00",
+               "min" : 12725648
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
+               "day" : "2021-06-28T00:00:00+00:00",
+               "min" : 12719182
+            }
+         },
+         {
+            "__typename" : "get_result_template",
+            "data" : {
                "day" : "2021-06-27T00:00:00+00:00",
                "min" : 12712734
             }
@@ -1473,9 +1543,9 @@
                "min"
             ],
             "error" : null,
-            "generated_at" : "2021-06-27T20:38:05.905169+00:00",
-            "id" : "1db29cd6-4f1a-4642-b6dc-a46a73cc0764",
-            "job_id" : "5af810f1-ed42-4fdd-907c-8c998f7d7316",
+            "generated_at" : "2021-07-07T15:22:12.636999+00:00",
+            "id" : "d7b5ec8e-b147-4c69-946d-b62f29f47d47",
+            "job_id" : "6830c891-80a8-4668-bcbb-903138347c05",
             "runtime" : 1
          }
       ]
